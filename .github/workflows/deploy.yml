@@ -18,10 +18,6 @@ jobs:
           export BUN_INSTALL="$HOME/.bun"
           export PATH="$BUN_INSTALL/bin:$PATH"
 
-      # Verify Bun installation
-      - name: Verify Bun Installation
-        run: bun --version
-
       # Deploy to Cloudflare Workers using Wrangler
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
