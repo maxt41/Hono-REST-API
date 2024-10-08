@@ -4,10 +4,10 @@ https://cdn.maxthomasdev.workers.dev/
 ```
 
 ```
-bun install
-bun run dev
+npm install
+npm run dev
 ```
 
 ```
-bun run deploy
+npm run deploy
 ```

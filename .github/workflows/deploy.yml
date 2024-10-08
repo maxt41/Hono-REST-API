@@ -11,14 +11,6 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v4
-
-      # Install Bun and add it to PATH
-      - name: Install Bun
-        run: |
-          curl -fsSL https://bun.sh/install | bash
-          echo "BUN_INSTALL=$HOME/.bun" >> $GITHUB_ENV
-          echo "PATH=$HOME/.bun/bin:$PATH" >> $GITHUB_ENV
-
       # Deploy to Cloudflare Workers using Wrangler
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
