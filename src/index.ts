@@ -10,4 +10,9 @@ app.notFound((c) => {
   return c.json({ error: '404 Not Found' }, 404);
 });
 
+app.onError((err, c) => {
+  console.error(`${err}`);
+  return c.json({ error: 'An error occurred' });
+});
+
 export default app;
