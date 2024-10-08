@@ -15,6 +15,6 @@ notes.get('/:id', (c) => {
 notes.get('/', (c) => {
     const notes = [{ id: 1, note: 'Hello world!' }, { id: 2, note: 'Goodbye world?' }]
     return c.json({ notes: notes })
-})
+});
 
 export default notes;
